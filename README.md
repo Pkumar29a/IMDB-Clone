@@ -11,4 +11,3 @@ Add to Favorites: Each search result has an "Add to Favorites" button. Clicking 
 Favorites Page: Users can view their favorite movies on a dedicated page. The favorites list is persistent, meaning it remains intact even after closing or refreshing the browser.
 
 Remove from Favorites: Each movie in the favorites list has a "Remove from Favorites" button. Clicking on it removes the movie from the favorites list.
-
