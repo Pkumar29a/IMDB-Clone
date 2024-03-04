@@ -24,14 +24,14 @@ function displaySearchResults(results) {
 
 // Function to display movie details
 async function displayMovieDetails(movieId) {
-    const response = await fetch("https://www.omdb.com/");
+    const response = await fetch("https://www.imdb.com/");
     const data = await response.json();
     // Display movie details (name, photo, plot, etc)
     console.log(data);
 }
 
 // Event: Search for movies
-document.getElementById('search').addEventListener('input', async (e) => {
+document.getElementById('search').addEventListener('input', async (e) {
     const searchTerm = e.target.value;
     if (searchTerm.length > 2) {
         const results = await searchMovies(searchTerm);
@@ -40,7 +40,7 @@ document.getElementById('search').addEventListener('input', async (e) => {
 });
 
 // Event: Add to favorites
-document.getElementById('search-results').addEventListener('click', async (e) => {
+document.getElementById('search-results').addEventListener('click', async (e) {
     if (e.target.classList.contains('add-to-favorites')) {
         const movieId = e.target.getAttribute('data-id');
         // Add movie to favorites
