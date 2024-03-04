@@ -24,7 +24,7 @@ function displaySearchResults(results) {
 
 // Function to display movie details
 async function displayMovieDetails(movieId) {
-    const response = await fetch(https://www.imdb.com/);
+    const response = await fetch("https://www.imdb.com/");
     const data = await response.json();
     // Display movie details (name, photo, plot, etc)
     console.log(data);
